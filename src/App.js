@@ -9,7 +9,7 @@ function App() {
     console.log("hello world");
      }else{
       console.log('hi');
-     }*/
+     }
      const employ= { 
      name:"shivam",
      salary:10,
@@ -39,6 +39,11 @@ function App() {
         }
          else{
           console.log("hello")
+        }*/ 
+        const arr1 = [1,2,3,4,5,6];
+
+        for (let item of arr1){//for loop
+          console.log(item);
         }
      
 
