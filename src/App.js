@@ -39,15 +39,66 @@ function App() {
         }
          else{
           console.log("hello")
-        }*/ 
+        }
         const arr1 = [1,2,3,4,5,6];
 
         for (let item of arr1){//for loop
           console.log(item);
         }
-     
+     const student = [ 
+       {student_name: "shivam kumar ", age :20} ,
+       {student_name: "parth kumar" , age : 21},
+       {student_name: "nikhil", age : 32}
+      
+     ]
+     for(let item of student ){  
+      console.log(item.student_name)
+     }
+    
+     student.forEach((person)=>{ 
+      console.log(person.age)
+     }); 
+     const employ ={
+      name : "john",
+      age : 30,
+      occupation : "youtuber"
+     };
+     for (const key in employee){
+      if(employee.hasownproperty(key)){
+        console.log(`${key}:${student[key]}`)
+      }
+     }
 
-  return (
+      const student2 = [ 
+       {student_name: "shivam kumar ", age :20, fess : 100} ,
+       {student_name: "parth kumar" , age : 21,fess : 200},
+       {student_name: "nikhil", age : 32, fess :300}
+      
+     ]
+     const mappedstudent = student.map((item)  => {
+
+      return {
+        ...item,
+        fess : item.age + 300,    
+      };
+     },[]);
+     console.log("student",student);
+     console.log("mappedstudent", mappedstudent);*/
+
+     const student = [ 
+       {student_name: "shivam kumar ", age :20, fess : 100} ,
+       {student_name: "parth kumar" , age : 21,fess : 200},
+       {student_name: "nikhil", age : 32, fess :300},                                                   
+       {student_name: "mohanm kumar ", age :25, fess : 100},
+       {student_name: "harsh kumar" , age : 51,fess : 200},
+       {student_name: "nihal", age : 22, fess :300},
+     ];
+     const filterstudent = student.filter((item)=>{ 
+      return item.fess === 100;
+    });
+    console.log("filter_student", filterstudent)
+    
+      return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -60,7 +111,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React  
         </a>
       </header>
     </div>
