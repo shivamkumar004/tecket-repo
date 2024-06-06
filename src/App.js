@@ -83,7 +83,8 @@ function App() {
       };
      },[]);
      console.log("student",student);
-     console.log("mappedstudent", mappedstudent);*/
+     console.log("mappedstudent", mappedstudent);
+     
 
      const student = [ 
        {student_name: "shivam kumar ", age :20, fess : 100} ,
@@ -96,7 +97,8 @@ function App() {
      const filterstudent = student.filter((item)=>{ 
       return item.fess === 100;
     });
-    console.log("filter_student", filterstudent)
+    console.log("filter_student", filterstudent)*/
+    
     
       return (
     <div className="App">
