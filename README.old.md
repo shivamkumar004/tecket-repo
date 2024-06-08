@@ -1,1 +1,1 @@
-# tecket-repo
+# Teckat-intership
